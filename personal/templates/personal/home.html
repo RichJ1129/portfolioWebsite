@@ -1,0 +1,107 @@
+{% extends 'personal/header.html' %}
+
+{% block content %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active image1"></div>
+    <div class="carousel-item image2"></div>
+    <div class="carousel-item image3"></div>
+    {% comment %} ABOUT {% endcomment %}
+    <div class="about" class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="content">
+            <h4 class="text-center">Computer Science Student at Oregon State University (Post-Bacc. Program)
+            </h4>
+            <hr style="background-color: white">
+            <p class="text-center">Passionate about technology but more importantly I am passionate about
+              learning. See my work below.</p>
+            <div id="scroll-button" class="double-down-button" onclick="bottom();"><i
+                class="fas fa-chevron-circle-down"></i></div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+  {% comment %} Background {% endcomment %}
+  <div class="dark-back">
+    <div class="container">
+      <h4 id="my_background">My Background</h4>
+      <p class="back-text">I am currently taking classes remotely at Oregon State University's Computer Science
+        post-baccalaureate program. My first degree is in Biology from the University of Massachusetts
+        Dartmouth.
+        I have always been a curious person and a person that has been able to take the initiative. In this way
+        I feel like a computer science degree has been right for me. What spurred me to do this program was
+        my old job in assay development in which compiling and analyzing data was a crucial part in making the
+        right decisions. The job taught me how to use excel in a more robust way and how to use minitab in a
+        way that I have never done before. The use of these programs I guess introduced me to learning python so
+        I could analyze data in a better way. I decided I liked to code but was it a career move that I wanted
+        to make.
+        To test the waters I took an online programming class at University of Massachusetts Dartmouth "Computer
+        Program with C", after the end of the class I felt like enrolling in a computer science program was the
+        right choice. This degree will supplement my biology degree by becoming more efficient and
+        allowing me to look at data in different ways. The degree will also open more doors in my career in
+        terms of different software engineering paths. </p>
+    </div>
+  </div>
+
+  {% comment %} Projects {% endcomment %}
+  <div class="container">
+    <h4 id="projects">Projects</h4>
+    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Language</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/RichJ92/Final-Project">CS 162 Final Project</a></td>
+            <td>Final Project for CS 162. The task is to complete earn enough to buy the necessary items to
+              leave. Train, scout, fight, repeat.</td>
+            <td>C++</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/RichJ92/ZooTycoon/tree/master/ZooTycoon">Zoo Tycoon</a></td>
+            <td>Virtual Zoo. That allows you to buy animals. Also prints
+              out daily stats for each day. Keep your zoo afloat</td>
+            <td>C++</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/RichJ92/langstonsAnt/tree/master/Langston's%20Ant">Langston's
+                Ant</a></td>
+            <td>Program that asks the user for rows and columns of board
+              to construct. User is asked to input ants placement and direction
+              alongside number of iterations. Langston's ant program starts and
+              iterates</td>
+            <td>C++</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  {% endblock %}

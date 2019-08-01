@@ -1,0 +1,131 @@
+body {
+  font-family: 'Oxygen';
+  background-color: #F1F1F1;
+}
+
+.dark-back {
+  background-color: #191919;
+  color: white;
+  box-shadow: 0px 5px 25px 20px rgba(0, 0, 0, 0.20), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+}
+
+#my_background {
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.back-text {
+  padding-bottom: 5%;
+}
+
+.about {
+    color: white;
+    position: center;
+}
+
+.firstName {
+  font-family: 'Oxygen';
+  font-weight: normal;
+  font-size: 1.10rem;
+}
+
+.lastName {
+  font-family: 'Oxygen';
+  font-weight: bold;
+  font-size: 1.10rem;
+}
+
+.icon {
+  font-size: 1.30rem;
+  margin: 0.7rem;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+}
+
+.carousel-control-prev {
+    margin-top: 20px;
+}
+
+.carousel-control-next {
+    margin-top: 20px;
+}
+
+.carousel-inner .carousel-item {
+    width: 100%;
+    height: -webkit-fill-available;
+    background-position: center;
+    background-size: cover;
+}
+
+.image1 {
+    background: url("../img/1.jpg") no-repeat center center fixed;
+}
+
+.image2 {
+    background: url("../img/2.jpg") no-repeat center center fixed;
+}
+
+.image3 {
+    background: url("../img/TechPhoto.jpeg") no-repeat center center fixed;
+}
+
+#content {
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.row {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20%;
+  text-align: center;
+}
+
+#projects {
+  padding-top: 3%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+@keyframes pulse {
+  from { transform: scale(1.25); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1.25); }
+}
+
+.double-down-button {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.double-down-button:hover,
+.double-down-button:focus {
+  animation-name: unset;
+}
+
+.my-custom-scrollbar {
+position: relative;
+height: 200px;
+overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+display: block;
+}
+
+
+
+

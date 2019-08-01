@@ -1,0 +1,17 @@
+{% extends 'personal/header.html' %}
+{% block extrahead%}
+    {% load static %}    
+    <link rel="stylesheet" type="text/css" href="{% static "blog/css/style.css"%}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header">{{post.title}}</h5>
+            <div class="card-body">
+                <h5 class="card-title">{{post.date}}</h5>
+                <p class="card-text">{{post.body|safe|linebreaks}}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

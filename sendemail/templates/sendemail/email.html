@@ -1,0 +1,40 @@
+{% extends 'personal/header.html' %}
+
+{% block extrahead%}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'sendemail/css/style.css'%}">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+
+    <h1 class="text-center">Contact Me</h1>
+
+  <form method="post" >
+    {% csrf_token %}
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="">
+
+    <label for="id_from_email">Email address</label>
+    <input type="email" id="id_from_email" name="from_email" placeholder="" required>
+
+    <label for="id_subject">Reason</label>
+    <select id="id_subject" name="subject">
+      <option value="Career Opportunity">Career Opportunity</option>
+      <option value="Code Improvement Suggestion">Suggestions for Code Improvements</option>
+      <option value="Other">Other</option>
+    </select>
+    <label for="id_message">Message</label>
+    <textarea type="text" id="id_message" name="message" placeholder="..." style="height:200px"></textarea>
+      <div class="text-center" class="form-actions">
+    <button class="btn btn-dark">Send</button>
+  </form>
+</div>
+<br>
+<br>
+<p class="text-center">richjoseph1129@gmail.com      or      josephri@oregonstate.edu</p>
+{% endblock %}
+
